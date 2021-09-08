@@ -2,7 +2,7 @@
   "name": "Change Displayed Account Name for AWS SSO",
   "short_name": "Change Displayed Accout Name",
   "description": "Change Display Accout Name of AWS Console (AWS SSO)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
   "icons": {
     "48": "icons/icon_48x48.png",
