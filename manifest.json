@@ -1,0 +1,23 @@
+{
+  "name": "Change Displayed Account Name for AWS SSO",
+  "short_name": "Change Displayed Accout Name",
+  "description": "Change Display Accout Name of AWS Console (AWS SSO)",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48x48.png",
+    "48": "icons/icon_128x128.png"
+  },
+  "browser_action": {
+    "default_titile": "Change Displayed Account Name",
+    "default_icon": "icons/icon_38x38.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://*.console.aws.amazon.com/*",
+      "https://phd.aws.amazon.com/*"
+    ],
+    "js": ["script.js"],
+    "run_at": "document_idle"
+  }]
+}
